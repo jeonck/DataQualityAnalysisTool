@@ -222,7 +222,8 @@ tr:hover {
 }
 
 /* Image styling for data quality management image */
-.component-content img {
+.component-content img,
+#governance img {
     display: block;
     margin: 1rem auto;
     max-width: 100%;
