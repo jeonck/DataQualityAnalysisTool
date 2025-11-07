@@ -342,17 +342,10 @@ strong {
 }
 
 /* Reduced keyword highlighting - focusing on most important concepts */
-.keyword-concept {
-    background-color: #fee2e2;
-    color: #b91c1c;
-    padding: 0.2rem 0.4rem;
-    border-radius: 0.25rem;
-    font-weight: 600;
-}
 
-.keyword-action {
-    background-color: #fffbeb;
-    color: #975a16;
+.keyword-result {
+    background-color: #dcfce7;
+    color: #166534;
     padding: 0.2rem 0.4rem;
     border-radius: 0.25rem;
     font-weight: 600;
