@@ -242,6 +242,36 @@ tr:hover {
     font-style: italic;
 }
 
+/* Tool usage table styling */
+.tool-usage-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tool-usage-table th,
+.tool-usage-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tool-usage-table th {
+    background-color: #e6f6ff;
+    font-weight: bold;
+    color: #1a365d;
+}
+
+.tool-usage-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.tool-usage-table tr:hover {
+    background-color: #edf2f7;
+}
+
 /* Improvement steps grid and card styling */
 .improvement-steps-grid {
     display: grid;
