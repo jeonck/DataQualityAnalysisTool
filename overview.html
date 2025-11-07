@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>도구 중심의 데이터 품질 분석 체계 - 개요</title>
+    <title>데이터 품질 진단 및 개선 - 개요</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
         .overview-container {
@@ -146,7 +146,7 @@
 <body>
     <header>
         <div class="container">
-            <h1>도구 중심의 데이터 품질 분석 체계</h1>
+            <h1>데이터 품질 진단 및 개선</h1>
             <p>한 눈에 보는 전체 구조</p>
         </div>
     </header>
@@ -194,76 +194,58 @@
             </div>
         </section>
 
-        <section class="key-concept">
-            <h3>핵심 도구들</h3>
-            <p>데이터 품질 진단 및 개선 절차 전반에 걸쳐 아래의 도구들이 활용됩니다:</p>
-        </section>
-
-        <section class="tools-overview">
-            <div class="tool-card">
-                <h3>데이터프로파일링</h3>
-                <div class="tool-description">
-                    <p>데이터의 구조, 값, 품질 수준을 분석하여 데이터에 대한 전반적인 이해를 제공합니다. 주로 2단계(품질진단 실시)에서 활용됩니다.</p>
-                </div>
-                <a href="pages/data-profiling.html" class="tool-link">자세히 보기</a>
-            </div>
+        <section class="process-table">
+            <h2>데이터 품질 진단 및 개선 6단계 절차 및 도구</h2>
+            <table class="detailed-process-table">
+                <thead>
+                    <tr>
+                        <th>단계</th>
+                        <th>절차 명칭</th>
+                        <th>주요 활동 (절차)</th>
+                        <th>해당 단계에서 활용되는 주요 도구 및 방법론</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>진단대상 정의 (Define)</td>
+                        <td>품질 이슈 수요 및 현황 조사, 중점 품질관리 대상 데이터베이스 선정, 진단 방향성 정의.</td>
+                        <td>품질관리 계획서, 품질 이슈 목록, 오류 신고 내역 (국민 또는 연계기관의 오류 신고 내용) 분석. 외부 전문가 의견 수렴.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>품질진단 실시 (Measure)</td>
+                        <td>품질 진단 영역별로 진단 기법을 적용하여 데이터 품질을 측정하고 오류 데이터를 1차 추출.</td>
+                        <td>프로파일링 도구 (Profiling Tool), 프로파일링 기법 (값·구조 진단). 업무규칙 진단 기법 (스크립트(SQL 등) 작성 및 실행). 체크리스트 (인터뷰·설문). 비정형 실측.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>진단결과 분석 (Analyze)</td>
+                        <td>측정된 오류에 대한 오류 원인 분석 (근본 원인 추적), 업무 영향 분석을 수행하여 개선 기회를 도출.</td>
+                        <td>품질 진단·분석 기능 (인프라 도구). 오류 유형 및 원인 분석 결과서 작성. 프로파일링 보고서, 오류 결과 보고서 등 측정 결과를 활용.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>개선계획 수립 (Improvement Plan)</td>
+                        <td>개선과제 정의 및 우선순위 설정, 품질개선 전략 수립 (데이터 중심/프로세스 중심) 및 추진 계획서 작성.</td>
+                        <td>품질 개선 계획서 작성. 개선목표, 성과평가 지표(KPI) 설정.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>개선 수행 (Implement)</td>
+                        <td>상세 개선 계획에 따라 데이터 보정, 표준화 수립, 품질 관리 체계 수립 등 개선 활동을 실제로 실행.</td>
+                        <td>데이터 보정 방식 (수작업 보정, Script 방식 보정, 원천 데이터 재입력 보정 등). 메타데이터 관리시스템 (표준화 수립 및 관리에 활용). 품질 개선 결과보고서 작성.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>품질 통제 (Control)</td>
+                        <td>개선 사업의 결과 평가 (개선 전·후 비교, 비용 편익 분석) 및 품질 목표 재설정. 지속적인 품질 통제 활동 (모니터링, 교육, 오류 신고 관리) 수행.</td>
+                        <td>품질 진단 및 분석 기능을 이용한 개선 추이 보고서를 활용한 모니터링. 데이터 품질 오류 신고서 및 처리 대장을 통한 오류 신고 관리.</td>
+                    </tr>
+                </tbody>
+            </table>
             
-            <div class="tool-card">
-                <h3>비즈니스룰관리</h3>
-                <div class="tool-description">
-                    <p>데이터가 업무 기준(규칙)에 부합하는지를 확인하고, 업무적으로 오류가 있는 데이터를 식별합니다. 주로 2단계(품질진단 실시)에서 활용됩니다.</p>
-                </div>
-                <a href="pages/business-rule.html" class="tool-link">자세히 보기</a>
-            </div>
-            
-            <div class="tool-card">
-                <h3>데이터품질측정및분석</h3>
-                <div class="tool-description">
-                    <p>데이터 품질을 정량적 지표로 측정하고 분석하여 품질 수준을 평가합니다. 주로 2단계(품질진단 실시) 및 3단계(진단결과 분석)에서 활용됩니다.</p>
-                </div>
-                <a href="pages/quality-measure.html" class="tool-link">자세히 보기</a>
-            </div>
-            
-            <div class="tool-card">
-                <h3>오류데이터개선활동지원</h3>
-                <div class="tool-description">
-                    <p>오류 데이터를 식별하고 원인을 분석하여 개선 활동을 지원합니다. 주로 3단계(진단결과 분석) 및 4단계(개선계획 수립)에서 활용됩니다.</p>
-                </div>
-                <a href="pages/error-improvement.html" class="tool-link">자세히 보기</a>
-            </div>
-        </section>
-
-        <section class="system-visual">
-            <h2>도구 중심의 품질 분석 체계</h2>
-            <p>도구 중심의 데이터 품질 관리 체계는 4가지 핵심 도구를 중심으로 구성되며, 이들은 데이터 품질 진단 및 개선 6단계 절차에 따라 운영됩니다.</p>
-            
-            <div class="framework-flow">
-                <div class="framework-step">
-                    <h3>1. 비즈니스룰관리</h3>
-                    <p>Business Rule Management</p>
-                </div>
-                
-                <div class="connector"></div>
-                
-                <div class="framework-step">
-                    <h3>2. 데이터프로파일링</h3>
-                    <p>Data Profiling</p>
-                </div>
-                
-                <div class="connector"></div>
-                
-                <div class="framework-step">
-                    <h3>3. 데이터품질측정및분석</h3>
-                    <p>Data Quality Measurement and Analysis</p>
-                </div>
-                
-                <div class="connector"></div>
-                
-                <div class="framework-step">
-                    <h3>4. 오류데이터개선활동지원</h3>
-                    <p>Error Data Improvement Support</p>
-                </div>
-            </div>
+            <p class="process-note">이 6단계 절차는 공공기관이 데이터 품질관리 활동을 수행하는 데 있어 가장 구체적인 실무 가이드를 제공하며, 특히 품질진단 실시(Measure) 단계에서는 프로파일링 도구의 활용이 강조됩니다.</p>
         </section>
 
         <section class="key-concept">
