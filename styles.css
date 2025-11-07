@@ -1,0 +1,377 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #1a365d, #2c5282);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #2d3748;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #4a5568;
+}
+
+/* Main content styles */
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 3rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1a365d;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: #2c5282;
+    margin: 1.5rem 0 1rem;
+    font-size: 1.4rem;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #e6f6ff;
+    font-weight: bold;
+    color: #1a365d;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tr:hover {
+    background-color: #edf2f7;
+}
+
+/* Export button styles */
+.export-btn {
+    background-color: #48bb78;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.export-btn:hover {
+    background-color: #38a169;
+}
+
+/* Function section styles */
+.function-section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    border-left: 4px solid #4299e1;
+    background-color: #f9fafb;
+}
+
+/* Quality function styles */
+.quality-function {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #48bb78;
+}
+
+.quality-function h3,
+.quality-function h4 {
+    color: #2c5282;
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.quality-function h5 {
+    color: #4a5568;
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+/* Sub function styles */
+.sub-function {
+    margin: 1rem 0 0 1rem;
+    padding: 1rem;
+    background-color: #f8fafc;
+    border-left: 2px solid #cbd5e0;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Tool function styles */
+.tool-function {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #4299e1;
+}
+
+.tool-function h3,
+.tool-function h4 {
+    color: #2c5282;
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+/* Business rule function styles */
+.business-rule-function,
+.quality-measure-function,
+.error-improvement-function {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #ed8936;
+}
+
+.business-rule-function h3,
+.quality-measure-function h3,
+.error-improvement-function h3 {
+    color: #2c5282;
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+/* Style for subsections within data profiling */
+#data-profiling section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f9fafb;
+    border-radius: 8px;
+    border-left: 4px solid #4299e1;
+}
+
+/* Procedure cards styles */
+.procedure-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.procedure-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e2e8f0;
+}
+
+.procedure-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.procedure-card h4 {
+    color: #2c5282;
+    margin-top: 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+.procedure-card ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.procedure-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Tool cards styles */
+.tool-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.tool-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e2e8f0;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tool-card h3 {
+    color: #2c5282;
+    margin-top: 0;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+.tool-card ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.tool-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2d3748;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 0.25rem 0;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    .tool-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    table {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 0.5rem;
+    }
+}
+
+/* Additional styling for content */
+p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+ul, ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+strong {
+    font-weight: 600;
+    color: #1a365d;
+}
+
+/* Anchor link styling for navigation */
+a[href^="#"] {
+    color: #4299e1;
+    text-decoration: none;
+}
+
+a[href^="#"]:hover {
+    text-decoration: underline;
+}
