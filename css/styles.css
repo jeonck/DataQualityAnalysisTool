@@ -232,6 +232,15 @@ tr:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Image source styling */
+.image-source {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
 /* Function section styles */
 .function-section {
     margin-bottom: 2.5rem;
