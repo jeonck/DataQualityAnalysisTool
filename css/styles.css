@@ -281,6 +281,46 @@ tr:hover {
     font-style: italic;
 }
 
+/* Infrastructure functions table styling */
+.infrastructure-functions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.infrastructure-functions-table th,
+.infrastructure-functions-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.infrastructure-functions-table th {
+    background-color: #e6f6ff;
+    font-weight: bold;
+    color: #1a365d;
+}
+
+.infrastructure-functions-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.infrastructure-functions-table tr:hover {
+    background-color: #edf2f7;
+}
+
+.benefits-list {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.benefits-list li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
 /* Tool usage table styling */
 .tool-usage-table {
     width: 100%;
