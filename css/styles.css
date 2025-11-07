@@ -221,6 +221,16 @@ tr:hover {
     line-height: 1.6;
 }
 
+/* Image styling for data quality management image */
+.component-content img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Function section styles */
 .function-section {
     margin-bottom: 2.5rem;
