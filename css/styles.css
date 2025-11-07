@@ -341,39 +341,7 @@ strong {
     color: #1a365d;
 }
 
-/* Metacognitive keyword highlighting */
-.keyword-process {
-    background-color: #e6f6ff;
-    color: #1a365d;
-    padding: 0.2rem 0.4rem;
-    border-radius: 0.25rem;
-    font-weight: 600;
-}
-
-.keyword-action {
-    background-color: #fffbeb;
-    color: #975a16;
-    padding: 0.2rem 0.4rem;
-    border-radius: 0.25rem;
-    font-weight: 600;
-}
-
-.keyword-purpose {
-    background-color: #f0fdf4;
-    color: #1e7e34;
-    padding: 0.2rem 0.4rem;
-    border-radius: 0.25rem;
-    font-weight: 600;
-}
-
-.keyword-goal {
-    background-color: #f8fafc;
-    color: #4a5568;
-    padding: 0.2rem 0.4rem;
-    border-radius: 0.25rem;
-    font-weight: 600;
-}
-
+/* Reduced keyword highlighting - focusing on most important concepts */
 .keyword-concept {
     background-color: #fee2e2;
     color: #b91c1c;
@@ -382,9 +350,9 @@ strong {
     font-weight: 600;
 }
 
-.keyword-result {
-    background-color: #ede9fe;
-    color: #6d28d9;
+.keyword-action {
+    background-color: #fffbeb;
+    color: #975a16;
     padding: 0.2rem 0.4rem;
     border-radius: 0.25rem;
     font-weight: 600;
