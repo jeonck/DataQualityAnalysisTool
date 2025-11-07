@@ -147,6 +147,36 @@ tr:hover {
     background-color: #38a169;
 }
 
+/* Detailed function table styles */
+.detailed-function-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.detailed-function-table th,
+.detailed-function-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.detailed-function-table th {
+    background-color: #e6f6ff;
+    font-weight: bold;
+    color: #1a365d;
+}
+
+.detailed-function-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.detailed-function-table tr:hover {
+    background-color: #edf2f7;
+}
+
 /* Function section styles */
 .function-section {
     margin-bottom: 2.5rem;
