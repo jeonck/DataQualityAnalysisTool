@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도구 중심의 데이터 품질 분석 체계 - 개요</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .overview-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .system-visual {
+            background: linear-gradient(135deg, #f0f4f8, #e2e8f0);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .framework-flow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .framework-step {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            width: 80%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .framework-step h3 {
+            margin: 0;
+            color: #2c5282;
+            font-size: 1.3rem;
+        }
+        
+        .framework-step p {
+            margin: 0.5rem 0 0;
+            color: #4a5568;
+        }
+        
+        .connector {
+            width: 2px;
+            height: 2rem;
+            background: #cbd5e0;
+            margin: 0 auto;
+        }
+        
+        .tools-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .tool-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tool-card h3 {
+            color: #2c5282;
+            margin-top: 0;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        
+        .tool-description {
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+        
+        .tool-link {
+            display: inline-block;
+            background-color: #3182ce;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .tool-link:hover {
+            background-color: #2b6cb0;
+        }
+        
+        .key-concept {
+            background: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .process-overview {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .process-step {
+            background: #f7fafc;
+            padding: 1rem;
+            border-radius: 6px;
+            border: 1px solid #bee3f8;
+        }
+        
+        .process-step h4 {
+            color: #3182ce;
+            margin: 0 0 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>도구 중심의 데이터 품질 분석 체계</h1>
+            <p>한 눈에 보는 전체 구조</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">소개</a></li>
+            <li><a href="overview.html">체계 개요</a></li>
+            <li><a href="pages/business-rule.html">비즈니스룰관리</a></li>
+            <li><a href="pages/data-profiling.html">데이터프로파일링</a></li>
+            <li><a href="pages/quality-measure.html">데이터품질측정및분석</a></li>
+            <li><a href="pages/error-improvement.html">오류데이터개선활동지원</a></li>
+        </ul>
+    </nav>
+
+    <main class="overview-container">
+        <section class="system-visual">
+            <h2>데이터 품질 분석 체계 전체 구조</h2>
+            <p>도구 중심의 데이터 품질 관리 체계는 4가지 핵심 도구를 중심으로 구성되며, 이들은 품질 개선 6단계 프로세스에 따라 운영됩니다.</p>
+            
+            <div class="framework-flow">
+                <div class="framework-step">
+                    <h3>1. 비즈니스룰관리</h3>
+                    <p>Business Rule Management</p>
+                </div>
+                
+                <div class="connector"></div>
+                
+                <div class="framework-step">
+                    <h3>2. 데이터프로파일링</h3>
+                    <p>Data Profiling</p>
+                </div>
+                
+                <div class="connector"></div>
+                
+                <div class="framework-step">
+                    <h3>3. 데이터품질측정및분석</h3>
+                    <p>Data Quality Measurement and Analysis</p>
+                </div>
+                
+                <div class="connector"></div>
+                
+                <div class="framework-step">
+                    <h3>4. 오류데이터개선활동지원</h3>
+                    <p>Error Data Improvement Support</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="key-concept">
+            <h3>핵심 개념</h3>
+            <p>도구 중심의 데이터 품질 분석은 데이터의 문제를 단순히 수작업으로 확인하는 것이 아니라, 전문 분석 도구를 활용하여 체계적이고 효율적으로 품질을 관리하는 접근 방식입니다.</p>
+        </section>
+
+        <section class="tools-overview">
+            <h2>각 도구의 역할과 기능</h2>
+            
+            <div class="tool-card">
+                <h3>비즈니스룰관리</h3>
+                <div class="tool-description">
+                    <p>데이터가 업무 기준(규칙)에 부합하는지를 확인하고, 업무적으로 오류가 있는 데이터를 식별합니다.</p>
+                </div>
+                <a href="pages/business-rule.html" class="tool-link">자세히 보기</a>
+            </div>
+            
+            <div class="tool-card">
+                <h3>데이터프로파일링</h3>
+                <div class="tool-description">
+                    <p>데이터의 구조, 값, 품질 수준을 분석하여 데이터에 대한 전반적인 이해를 제공합니다.</p>
+                </div>
+                <a href="pages/data-profiling.html" class="tool-link">자세히 보기</a>
+            </div>
+            
+            <div class="tool-card">
+                <h3>데이터품질측정및분석</h3>
+                <div class="tool-description">
+                    <p>데이터 품질을 정량적 지표로 측정하고 분석하여 품질 수준을 평가합니다.</p>
+                </div>
+                <a href="pages/quality-measure.html" class="tool-link">자세히 보기</a>
+            </div>
+            
+            <div class="tool-card">
+                <h3>오류데이터개선활동지원</h3>
+                <div class="tool-description">
+                    <p>오류 데이터를 식별하고 원인을 분석하여 개선 활동을 지원합니다.</p>
+                </div>
+                <a href="pages/error-improvement.html" class="tool-link">자세히 보기</a>
+            </div>
+        </section>
+
+        <section class="process-overview">
+            <h2>품질 개선 6단계 프로세스</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <h4>Define</h4>
+                    <p>진단대상 정의</p>
+                </div>
+                <div class="process-step">
+                    <h4>Measure</h4>
+                    <p>품질진단 실시</p>
+                </div>
+                <div class="process-step">
+                    <h4>Analyze</h4>
+                    <p>진단결과 분석</p>
+                </div>
+                <div class="process-step">
+                    <h4>Plan</h4>
+                    <p>개선계획 수립</p>
+                </div>
+                <div class="process-step">
+                    <h4>Implement</h4>
+                    <p>개선수행</p>
+                </div>
+                <div class="process-step">
+                    <h4>Control</h4>
+                    <p>품질통제</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="key-concept">
+            <h3>관계성</h3>
+            <p>4가지 도구는 품질 개선 6단계 프로세스의 Measure(측정) 및 Analyze(분석) 단계에서 주로 사용되며, 각 도구는 서로 보완적으로 작용하여 종합적인 데이터 품질 분석을 가능하게 합니다.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 도구 중심의 데이터 품질 분석. 모든 권리 보유.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
